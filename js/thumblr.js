@@ -54,7 +54,7 @@
 					if (tumblrURL.indexOf(".") == -1) var tumblrURL = tumblrURL + ".tumblr.com";
 					
 					$.ajax( {
-						url: "http://"+ tumblrURL + "/api/read/json?num=50&type=photo&callback=?",
+						url: "http://"+ tumblrURL + "/api/read/json?start&type=photo&callback=?",
 						dataType: "jsonp",
 						timeout : 5000,
 						success: function( data ) {
